@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+     font-family: 'mona-sansbold_wide';
+     src: url('../fonts/mona-sans-boldwide-webfont.woff2') format('woff2'),
+          url('../fonts/mona-sans-boldwide-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+@font-face {
+     font-family: 'panchangmedium';
+     src: url('../fonts/panchang-medium-webfont.woff2') format('woff2'),
+          url('../fonts/panchang-medium-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'panchangsemibold';
+     src: url('../fonts/panchang-semibold-webfont.woff2') format('woff2'),
+          url('../fonts/panchang-semibold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'panchangbold';
+     src: url('../fonts/panchang-bold-webfont.woff2') format('woff2'),
+          url('../fonts/panchang-bold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'hubot-sanssemibold';
+     src: url('../fonts/hubot-sans-semibold-webfont.woff2') format('woff2'),
+          url('../fonts/hubot-sans-semibold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'hubot-sansbold';
+     src: url('../fonts/hubot-sans-bold-webfont.woff2') format('woff2'),
+          url('../fonts/hubot-sans-bold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'hubot-sansbold_semi';
+     src: url('../fonts/hubot-sans-boldsemi-webfont.woff2') format('woff2'),
+          url('../fonts/hubot-sans-boldsemi-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'hubot-sansmedium';
+     src: url('../fonts/hubot-sans-medium-webfont.woff2') format('woff2'),
+          url('../fonts/hubot-sans-medium-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'hubot-sansmedium_semi';
+     src: url('../fonts/hubot-sans-mediumsemi-webfont.woff2') format('woff2'),
+          url('../fonts/hubot-sans-mediumsemi-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'hubot-sansregular';
+     src: url('../fonts/hubot-sans-regular-webfont.woff2') format('woff2'),
+          url('../fonts/hubot-sans-regular-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'hubot-sansregular_semi';
+     src: url('../fonts/hubot-sans-regularsemi-webfont.woff2') format('woff2'),
+          url('../fonts/hubot-sans-regularsemi-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'hubot-sansbold';
+     src: url('../fonts/hubot-sans-bold-webfont.woff2') format('woff2'),
+          url('../fonts/hubot-sans-bold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+@font-face {
+     font-family: 'neue_haas_grotesk_display65Md';
+     src: url('../fonts/neuehaasdisplaymediu-webfont.woff2') format('woff2'),
+          url('../fonts/neuehaasdisplaymediu-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+
+}
+
+.ps-xl {
+     padding-left: calc(50vw - 650px);
+}
+
+.swiper-scrollbar-drag {
+     background: #121212;
+}
+
+.swiper-scrollbar {
+     background: #2A2A2A;
+}
+
+.main-sec {
+     --space: 2rem;
+}
+
+.marquee {
+     --duration: 200s;
+     --gap: var(--space);
+     user-select: none;
+}
+
+.marquee__group {
+     gap: var(--gap);
+     animation: scroll var(--duration) linear infinite;
+}
+
+.marquee--reverse .marquee__group {
+     animation-direction: reverse;
+     animation-delay: calc(var(--duration) / -2);
+}
+
+.heading {
+     color: #fff;
+     -webkit-text-fill-color: transparent;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: #fff;
+}
+
+@keyframes scroll {
+     0% {
+          transform: translateX(0);
+     }
+
+     100% {
+          transform: translateX(calc(-100% - var(--gap)));
+     }
+}
+
+#default-tab [aria-selected='true'] {
+     background-color: #FFF;
+     color: #121212;
+}
+
+@media (max-width: 767px) {
+     br {
+          display: contents;
+     }
+}
